@@ -1,7 +1,12 @@
 ---
 title: GitHub Pages 博客发布三件套：推代码即上线
-date: 2026-08-18
+date: 2026-08-18T00:00:00+08:00
 draft: false
+tags:
+  - github-pages
+  - hugo
+  - ci/cd
+author: Jasonfqy
 ---
 
 发布 GitHub Pages 博客，两大痛点：草稿误发、构建产物污染源码。三个小技巧一次解决。

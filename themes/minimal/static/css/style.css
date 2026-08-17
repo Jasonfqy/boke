@@ -1,0 +1,99 @@
+:root {
+  --bg: #ffffff;
+  --fg: #1f2328;
+  --muted: #59636e;
+  --accent: #0969da;
+  --border: #d1d9e0;
+  --code-bg: #f6f8fa;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC",
+    "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 1.7;
+  color: var(--fg);
+  background: var(--bg);
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 1.25rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.site-title { font-weight: 700; font-size: 1.15rem; color: var(--fg); }
+.site-nav a { margin-left: 1rem; color: var(--muted); }
+
+.hero h1 { margin-bottom: 0.25rem; }
+.site-desc { color: var(--muted); }
+
+.section-title {
+  margin-top: 2.5rem;
+  font-size: 1.1rem;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.4rem;
+}
+
+.post-list { list-style: none; padding: 0; }
+.post-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 0.5rem 0;
+  border-bottom: 1px dashed var(--border);
+}
+.post-list time { color: var(--muted); font-size: 0.875rem; white-space: nowrap; margin-left: 1rem; }
+
+.post header h1 { margin-bottom: 0.25rem; }
+.post-meta { color: var(--muted); font-size: 0.9rem; margin-top: 0; }
+
+.post-content h2 { margin-top: 2rem; padding-bottom: 0.3rem; border-bottom: 1px solid var(--border); }
+.post-content h3 { margin-top: 1.5rem; }
+.post-content img { max-width: 100%; }
+.post-content pre {
+  background: var(--code-bg);
+  padding: 0.9rem 1rem;
+  border-radius: 6px;
+  overflow-x: auto;
+  font-size: 0.9rem;
+}
+.post-content code {
+  background: var(--code-bg);
+  padding: 0.15rem 0.35rem;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+.post-content pre code { padding: 0; background: none; }
+.post-content blockquote {
+  margin: 1rem 0;
+  padding-left: 1rem;
+  border-left: 3px solid var(--border);
+  color: var(--muted);
+}
+.post-content li { margin: 0.25rem 0; }
+
+.site-footer {
+  max-width: 720px;
+  margin: 3rem auto 0;
+  padding: 1.25rem;
+  border-top: 1px solid var(--border);
+  color: var(--muted);
+  font-size: 0.875rem;
+}
+.site-footer p { margin: 0; }

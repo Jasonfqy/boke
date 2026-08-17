@@ -1,0 +1,8 @@
+baseURL = "https://jasonfqy.github.io/boke/"
+defaultContentLanguage = "zh"
+locale = "zh-CN"
+title = "boke"
+theme = "minimal"
+
+[params]
+  description = "个人博客：GitHub Pages + Hugo"

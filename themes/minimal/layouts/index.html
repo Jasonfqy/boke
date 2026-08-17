@@ -1,0 +1,17 @@
+{{ define "title" }}{{ .Site.Title }}{{ end }}
+{{ define "main" }}
+<section class="hero">
+  <h1>{{ .Site.Title }}</h1>
+  <p class="site-desc">{{ .Site.Params.description }}</p>
+</section>
+
+<h2 class="section-title">文章</h2>
+<ul class="post-list">
+  {{ range where .Site.RegularPages "Section" "posts" }}
+  <li>
+    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+    <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "2006-01-02" }}</time>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
